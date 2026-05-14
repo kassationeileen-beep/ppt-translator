@@ -1,0 +1,4 @@
+source,target,case_sensitive,notes
+EBITDA,EBITDA,true,Keep financial acronym unchanged
+净收入,net income,false,Finance term example
+客户,client,false,Preferred business translation
