@@ -11,7 +11,7 @@ Use this skill for DOCX/PPTX translation and future Office document workflows th
 5. **Always generate `review_report.json`.** The report is the audit trail for risky content and QA findings.
 6. **Use glossary terms when provided.** Pass them to the LLM provider and run post-translation glossary QA.
 7. **Use manual-review flags instead of guessing.** Charts, SmartArt, embedded objects, images with text, grouped shapes, footnotes, comments, tracked changes, and complex fields may need human review.
-8. **For PPTX, use per-shape fitting only.** Never apply global scaling unless the user explicitly asks.
+8. **For PPTX, use per-shape fitting only.** Use run-boundary spacing, per-shape/text-frame autofit, and local run font reduction for likely overflow; never apply global scaling unless the user explicitly asks.
 9. **For DOCX, do not promise native Track Changes in v1.** Generate a review report with original vs. translated text instead.
 10. **For very complex files, produce best effort output plus review report.** Preserve risky originals rather than corrupting layout.
 

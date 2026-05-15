@@ -72,7 +72,7 @@ The workflow produces:
 ## Current limitations
 
 - PPTX charts, SmartArt, embedded objects, images with text, and complex grouped shapes may require manual review.
-- PPTX overflow detection is heuristic. The adapter only performs per-shape font reduction when likely overflow is detected and never applies global scaling by default.
+- PPTX overflow detection is heuristic. The adapter performs per-shape/text-frame autofit and paragraph-run font reduction when likely overflow is detected, and never applies global scaling by default.
 - DOCX footnotes, comments, tracked changes, text boxes, complex fields, and cross-references are not fully supported in v1.
 - Native DOCX Track Changes is not implemented in v1. Use `review_report.json` to compare original and translated text.
 - The OpenAI-compatible provider is intentionally minimal; production deployments should add retry/backoff, telemetry, and stricter structured-output validation.
