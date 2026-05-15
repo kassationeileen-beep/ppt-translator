@@ -1,0 +1,9 @@
+translation:
+  provider: mock
+  max_batch_chars: 6000
+  preserve_risky_blocks: true
+qa:
+  long_translation_ratio: 2.5
+  pptx_overflow_ratio: 1.8
+preview:
+  libreoffice_optional: true
